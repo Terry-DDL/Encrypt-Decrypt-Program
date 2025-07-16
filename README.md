@@ -1,28 +1,41 @@
-#Simple Substitution Cipher Tool
-Small console program that lets you encrypt and decrypt secret messages using a fixed substitution cipher (A–Z + space). It also preserves the original letter casing by storing a parallel casing pattern.
+# Simple Substitution Cipher Tool
+
+Small console Java program that encrypts and decrypts short secret messages using a fixed substitution alphabet (A–Z + space). It also preserves the original letter casing by saving a parallel casing pattern so your decrypted text can be restored exactly.
 
 ---
 
-##Features
-Encrypt plaintext (letters + spaces) to symbols using a fixed mapping.
-Decrypt from symbols back to text.
-Preserves original uppercase / lowercase via a separate casing string.
-Save / load encrypted data and casing pattern from text files.
+## Features
+
+* Encrypt plaintext (letters + spaces) into symbol cipher text.
+* Decrypt cipher text back to readable text.
+* Preserves uppercase / lowercase via a separate casing pattern string.
+* Save / load encrypted text and casing info from simple `.txt` files.
 
 ---
 
-##How to run:
+## How to Use (Menu)
 
-E – Encrypt a message you type.
-Saves:
-encryptedMessage.txt – encrypted text
-casingInfo.txt – casing pattern (U for uppercase, l for lowercase, space for other)
+When you run the program you’ll see a menu:
 
-D – Decrypt. Choose R to read from the saved files, or M to type an encrypted string and casing pattern manually.
+**E** – *Encrypt* a message you type.
 
-Q – Quit.
+* Saves two files:
+
+  * `encryptedMessage.txt` – the encrypted symbols.
+  * `casingInfo.txt` – casing pattern ("U" for uppercase, "l" for lowercase, space for all other chars).
+
+**D** – *Decrypt*.
+
+* Choose **R** to read the encrypted text + casing pattern from the saved files.
+* Choose **M** to paste / type the encrypted string and casing pattern manually.
+
+**Q** – Quit.
 
 ---
 
-##Not Real Security!
-This is a classroom / demo tool. Do not use for real confidential data.
+## Not Real Security!
+
+This is a **classroom / demo tool**. The cipher is easily broken and not suitable for real confidential or personal data.
+
+
+
